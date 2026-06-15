@@ -29,11 +29,11 @@ export function renderInsights(properties) {
 
   const avgPrice = properties.reduce((sum, p) => sum + p.price, 0) / properties.length;
 
-  const avgYield = properties.reduce((sum, p) => sum + p.yield, 0) / properties.length;
+  const avgYield = properties.reduce((sum, p) => sum + Number(p.yield), 0) / properties.length;
 
   container.innerHTML = `
     <p>Results: ${properties.length}</p>
     <p>Avg Price: ¥${Math.round(avgPrice).toLocaleString()}</p>
-    <p>Avg Yield: ${avgYield.toFixed(2)}</p>
+    <p>Avg Yield: ${avgYield.toFixed(1)}%</p>
   `;
 }
