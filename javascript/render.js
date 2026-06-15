@@ -13,6 +13,7 @@ export function renderProperties (properties){
       <p>Yield: ${p.yield}%</p>
       <p>Size: ${p.size} sqm</p>
     `;
+    el.classList.add("property");
 
     container.appendChild(el);
   });

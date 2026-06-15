@@ -4,21 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  <!-- Filters -->
-  <div id="filters">
-    <input type="text" id="keyword" placeholder="Search Location" />
-    <input type="number" id="min-price" placeholder="Min Price" />
-    <input type="number" id="max-price" placeholder="Max Price" />
-    <input type="number" id="min-yield" placeholder="Min Yield" />
+  <h1>Property Dashboard</h1>
+
+  <div class="layout">
+    <div class="sidebar">
+      <!-- Filters -->
+      <div id="filters">
+        <input type="text" id="keyword" placeholder="Search Location" />
+        <input type="number" id="min-price" placeholder="Min Price" />
+        <input type="number" id="max-price" placeholder="Max Price" />
+        <input type="number" id="min-yield" placeholder="Min Yield" />
+      </div>
+
+      <!-- Insights -->
+      <div id="insights"></div>
+
+    </div>
+
+    <div class="main">
+      <!-- Property List -->
+      <div id="list"></div>
+    </div>
+
   </div>
 
-  <!-- Insights -->
-  <div id="insights"></div>
 
-   <!-- Property List -->
-  <div id="list"></div>
+
 
   <script type="module" src="javascript/main.js"></script>
 </body>
